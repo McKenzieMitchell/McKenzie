@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>                 
+	<script type="text/javascript"> 
+	function checkpassword(){
+	var password = document.getElementById("passwordbox");
+	var passwordText = password.value;
+	if (passwordText == "horses"){
+		return true;
+	}
+	else{
+		alert("Access Denied");
+		return false;
+
+	}
+}
+	</script>
+
+</head>
+<body>
+	<p style="font-size: 50px ;">Welcome!</p>
+	<p>Please enter the password to veiw the following website.</p>
+	<p>Password: <input id="passwordbox" type = "password"> </p>
+	<a href="McKenzie.html" onclick="return checkpassword();">Submit</a>
+</body>
+</html>
